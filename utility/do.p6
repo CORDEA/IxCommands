@@ -22,7 +22,7 @@ use Parser;
 
 sub MAIN($fn, :$F = "\n", :$n = False) {
     my @lines = $*IN.lines();
-    lines = parse @lines, $F;
+    @lines = parse @lines, $F;
     do-lines @lines, $fn, $n;
 
     say @lines.join($F);
