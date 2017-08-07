@@ -23,5 +23,5 @@ sub MAIN(:$F = "\n") {
     my @lines = $*IN.lines();
     @lines = parse @lines, $F;
     my @result = average @lines;
-    say @result.join $F;
+    say @result.join($F);
 }

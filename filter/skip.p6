@@ -24,5 +24,5 @@ sub MAIN($n, :$F = "\n") {
     my @lines = $*IN.lines();
     @lines = parse @lines, $F;
     my @results = skip-lines @lines, $n;
-    say @results.join $F;
+    say @results.join($F);
 }

@@ -25,5 +25,5 @@ sub MAIN($fn, :$F = "\n", :$n = False) {
     lines = parse @lines, $F;
     do-lines @lines, $fn, $n;
 
-    say @lines.join $F;
+    say @lines.join($F);
 }
