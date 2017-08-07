@@ -21,7 +21,7 @@ use Parser;
 
 sub MAIN(:$F = "\n") {
     my @lines = $*IN.lines();
-    @lines = parse @lines;
+    @lines = parse @lines, $F;
     my @result = max-lines @lines;
     say @result.join($F);
 }
